@@ -22,7 +22,12 @@ function Titulo(props) {
 export default function PaginaInicial() {
   const [username, setUsername] = React.useState('');
   const roteamento = useRouter();
-  localStorage.setItem('user', username)
+
+  React.useEffect(() => {
+    localStorage.setItem('user', username)
+        })
+
+
 
 
    
