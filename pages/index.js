@@ -23,6 +23,9 @@ export default function PaginaInicial() {
   const [username, setUsername] = React.useState('');
   const roteamento = useRouter();
 
+  localStorage.setItem('user', username)    
+
+
   return (
     <>
       <Box
@@ -79,7 +82,7 @@ export default function PaginaInicial() {
                 setUsername(valor);
               }}
               style = {{width: 320}}     
-              label = "Digite o seu username do GitHub"
+              placeholder='Insira seu usuário do Github...'
               textFieldColors={{
                 neutral: {
                   textColor: appConfig.theme.colors.neutrals[200],
