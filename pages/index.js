@@ -22,10 +22,14 @@ function Titulo(props) {
 export default function PaginaInicial() {
   const [username, setUsername] = React.useState('');
   const roteamento = useRouter();
+  localStorage.setItem('user', username)
 
-  localStorage.setItem('user', username)    
 
+   
 
+  function handleFormSubmit() {
+    localStorage.setItem('user', username)
+  }
   return (
     <>
       <Box
