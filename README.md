@@ -1,6 +1,6 @@
 # aluracord-davi
 
- Chat em tempo real
+ Chat em tempo real, confira em https://aluracord-davi.vercel.app
  
  Foram utilizados componentes da biblioteca SkynexUI para a criação das páginas e o Supabase como back-end as a service, a fim de armazenar as mensagens e possibilitar o real time.
 
